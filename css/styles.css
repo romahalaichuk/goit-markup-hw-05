@@ -331,6 +331,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  bottom: 110px;
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
@@ -354,7 +355,7 @@ body {
 .project-description {
   position: relative;
   width: 370px;
-  height: 294px;
+  height: 404;
   overflow: hidden;
   transition-property: transform;
   transition-duration: 250ms;
