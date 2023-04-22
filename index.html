@@ -28,7 +28,7 @@
   </head>
 
   <body>
-    <header class="header">
+    <header>
       <div class="container container-nav">
         <nav class="navbar-list">
           <a class="logo" href="index.html"
@@ -41,14 +41,10 @@
               >
             </li>
             <li class="navbar-item navbar-space">
-              <a class="navbar-link navbar-links link" href="portfolio.html"
-                >Portfolio</a
-              >
+              <a class="navbar-link link" href="portfolio.html">Portfolio</a>
             </li>
             <li class="navbar-item navbar-space">
-              <a class="navbar-link navbar-links link" href="contacts.html"
-                >Kontakt</a
-              >
+              <a class="navbar-link link" href="contacts.html">Kontakt</a>
             </li>
           </ul>
         </nav>
@@ -88,9 +84,6 @@
           <button class="hero-button" type="button" data-modal-open>
             Zamów usługę
           </button>
-          <div class="modal is-hidden" data-moda>
-            <button></button>
-          </div>
         </div>
       </section>
 
@@ -484,6 +477,16 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal-box">
+        <button class="modal-close" data-modal-close>
+          <svg width="18" height="18">
+            <use href="./images/icons.svg#icon-close-icon"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
     <script src="./js/modal.js"></script>
   </body>
 </html>
