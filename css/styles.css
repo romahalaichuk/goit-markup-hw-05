@@ -128,6 +128,9 @@ h1 {
 .header-icons {
   fill: currentColor;
   margin-right: 10px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-icon-link:hover use {
   fill: var(--active-color);
@@ -235,6 +238,9 @@ body {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navbar-link:hover,
@@ -272,9 +278,12 @@ body {
   text-transform: uppercase;
   color: var(--main-background-color);
   position: absolute;
-  padding: 27px 132px;
-  right: 0;
+
+  padding-top: 27px;
+  padding-bottom: 27px;
+
   bottom: 0;
+  right: 0;
   left: 0;
   white-space: nowrap;
   background: rgba(47, 48, 58, 0.8);
@@ -394,7 +403,7 @@ body {
   padding: 63px 24px 91px 24px;
   color: var(--main-background-color);
   background-color: rgba(33, 150, 243, 0.9);
-  transform: translateY(100%);
+  transform: translateY(101%);
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -427,6 +436,9 @@ body {
   align-items: center;
   color: var(--adress-g);
   cursor: pointer;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero {
   background-image: linear-gradient(
@@ -489,6 +501,9 @@ body {
   border-radius: 50%;
   background-color: var(--main-background-color);
   color: var(--icon-color);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .socials-icons:hover,
 .socials-icons:focus {
@@ -568,6 +583,9 @@ body {
   border: 1px solid var(--icon-color);
   border-radius: 4px;
   color: var(--icon-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-icon-box {
   margin-left: 70px;
@@ -690,6 +708,9 @@ body {
   line-height: 1.6;
   text-align: center;
   letter-spacing: 0.03em;
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .projects-heading {
@@ -748,12 +769,7 @@ body {
 .projects-link {
   display: block;
 }
-.project-link {
-  display: block;
-  transition-property: box-shadow, transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 .project-links:focus .project-overlay {
   transform: translateY(0px);
 }
